@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=skull" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+    :root{
+      --azul-marinho: #022840;
+      --azul-escuro: #024873;
+      --azul-claro:#0A8CBF;
+      --preto: #0A0C0D;
+      --body-bg: #BFBDBA;
+      --footer-bg : #8C8A88;
+      --rubro: #700000;
+      --font-quadrada: "Pixelify Sans", sans-serif;
+      --font-principal: "Zilla Slab", serif;;
+      font-size: 16px;
+    }
+
+    *{
+      margin: 0px;
+      padding: 0px;
+      color: var(--preto);
+      font-family: var(--font-principal);
+    }
+    body{
+      background-color: var(--body-bg);
+    }
+    header{
+      position: sticky;
+      top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--azul-marinho);
+    }
+    main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+
+      margin: 1rem 0px;
+      padding: 0px 8rem;
+    }
+    h1{
+      color: var(--rubro);
+      font-family: var(--font-quadrada);
+      font-size: 3rem;
+      text-shadow: 2px 2px 0px #000000;
+    }
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+      color: var(--rubro);
+      font-size: 2.2rem;
+    }
+    h2{
+      font-family: var(--font-quadrada)
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DEADLOCK <span class="material-symbols-outlined">skull</span></h1>
+  </header>
+  
+  <main>
+    <section>
+      <h2>O que é?</h2>
+      <p><q>Um conjunto de processos estará em situação de deadlock se todo processo pertencente ao conjunto estiver esperando por um evento que somente um outro processo desse mesmo conjunto poderá fazer acontecer</q> - Andrew Stuart Tanenbaum</p>
+    </section>
+    <section>
+      <h2>Conceituação</h2>
+      <ul>
+        <li>Processo</li>
+        <li>Recurso</li>
+        <li>Instância de um recurso</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Condições necessárias</h2>
+      <ul>
+        <li>Retenção e espera</li>
+        <li>Exclusão mutua</li>
+        <li>Espera circular</li>
+        <li>Inexistência de preempção</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
